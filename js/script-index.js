@@ -14,6 +14,11 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	recipesArray.forEach(function(elemento){
+		if (elemento.highlighted == true) {
+			renderRecipe(elemento);
+		}
+	});
 }
 
 /*
